@@ -1,0 +1,34 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": "off",
+        "linebreak-style": "off",
+        "max-classes-per-file": "off",
+        "class-methods-use-this": "off",
+        "no-plusplus": "off",
+        "consistent-this": ["error", "self"],
+        "no-void": ["error", { "allowAsStatement": true }],
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/lines-between-class-members": ["error", { "exceptAfterSingleLine": true }],
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/no-this-alias": "off"
+    }
+}

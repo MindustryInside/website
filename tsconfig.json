@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "declarationDir": "./dist",
+        "module": "commonjs",
+        "target": "es2020",
+        "declaration": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "alwaysStrict": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "removeComments": false
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+}
