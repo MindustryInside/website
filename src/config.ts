@@ -5,7 +5,7 @@ import { config } from 'dotenv';
 config();
 
 export interface SSLConfig {
-    enabled: boolean;
+    enabled?: boolean;
     cert?: string;
     key?: string;
 }
@@ -15,9 +15,9 @@ export const ports = {
     https: 443
 };
 
-export const ssl: SSLConfig = { enabled: false };
+export const ssl: SSLConfig = { enabled: process.env.SSL === 'true' };
 
-if (process.env.SSL) {
+if (ssl.enabled) {
     if (!process.env.SSL_CERT || !process.env.SSL_KEY) {
         throw new Error('To enable SSL provide SSL_CERT and SSL_KEY in .env!');
     }
@@ -25,15 +25,14 @@ if (process.env.SSL) {
     try {
         ssl.cert = fs.readFileSync(process.env.SSL_CERT, 'utf8');
         ssl.key = fs.readFileSync(process.env.SSL_KEY, 'utf8');
-        ssl.enabled = true;
     } catch (e) {
         throw new Error('Incorrect .env config: ' + e);
     }
 }
 
 export const paths = {
-    public: path.join(__dirname, 'public'),
-    notFound: path.join(__dirname, 'public', '404.html')
+    public: path.join(__dirname, '..', 'public'),
+    notFound: path.join(__dirname, '..', 'public', '404.html')
 };
 
 export const discord = 'https://discord.gg/cwWsYrc';

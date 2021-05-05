@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { discord, paths } from '../config';
+import { discord, paths } from './config';
 
 export const app = express();
 
