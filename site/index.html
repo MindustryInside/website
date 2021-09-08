@@ -1,29 +1,27 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mindustry Inside</title>
-        <link rel="stylesheet" href="assets/css/index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="center">
-                <div>
-                    <img src="assets/images/logo.png" alt="logo" class="logo">
-                </div>
-                <div class="text">
-                    <h1>Mindustry Inside</h1>
-                </div>
-            </div>
-            <div class="links">
-                <p class="links-text">Links:</p>
-                <a href="https://github.com/MindustryInside" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/svg/github.svg" alt="github" class="link-icon">
-                </a>
-                <a href="https://discord.com/invite/cwWsYrc" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/svg/discord.svg" alt="discord" class="link-icon">
-                </a>
-            </div>
-        </div>
-    </body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<div class="logo">
+    <div>
+        <img src="assets/images/logo.png" alt="logo">
+    </div>
+    <p>
+        Mindustry <br>
+        Inside
+    </p>
+</div>
+
+<div class="links">
+    <h3>Links:</h3>
+    <ul>
+        {% for link in site.data.links %}
+        <li>
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/svg/{{ link.name | downcase }}.svg" alt="{{ link.name }}" class="link-icon">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
