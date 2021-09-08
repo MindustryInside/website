@@ -1,2 +1,4 @@
+source: site
+
 plugins:
   - jekyll-redirect-from
