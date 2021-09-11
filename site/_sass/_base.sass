@@ -1,13 +1,12 @@
-@import "abstracts/variables"
-@import "abstracts/mixins"
-@import "animations"
+@import 'abstracts/mixins'
+@import 'abstracts/variables'
 
 .logo
   @include centered
   @include expanded
 
   background-position: left
-  background-image: url('/assets/images/background.png')
+  background-image: url('/assets/background.png')
   animation-name: bg-animation
   animation-duration: $bg-animation-duration
   animation-timing-function: linear
@@ -44,6 +43,8 @@
   ul
     @include vertical-list
 
+    display: flex
+    align-items: center
     list-style: none
     margin: 0
     padding: 0

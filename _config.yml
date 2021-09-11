@@ -1,5 +1,4 @@
 source: site
 sass:
-  style: compressed
-plugins:
-  - jekyll-redirect-from
+  style: expanded
+  sass_dir: _sass
