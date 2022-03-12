@@ -1,0 +1,35 @@
+.page__wrapper {
+  margin-top: 120px;
+
+  .items__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .item__container {
+    width: 380px;
+    background-color: #0f0f0d;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    color: white;
+
+    .repo__link {
+      margin-bottom: 10px;
+    }
+
+    .bottom {
+      margin-top: auto;
+    }
+  }
+
+  .select__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+

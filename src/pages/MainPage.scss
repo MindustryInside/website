@@ -1,0 +1,40 @@
+.wrapper {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Audiowide';
+  font-size: 2.4rem;
+  color: #f4ba6e;
+
+  .mindustry {
+    color: white;
+    margin: 10px;
+  }
+
+  .inside {
+    color: #82ca9d;
+    margin: 10px;
+  }
+
+  .router {
+    height: 75px;
+    width: 75px;
+    background: url('../../public/assets/router.png') no-repeat;
+    background-size: cover;
+    margin: 20px 0 ;
+    animation: rotate 5s linear infinite;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    font-size: 1.4rem;
+  }
+
+  .router {
+    height: 55px;
+    width: 55px;
+  }
+}
