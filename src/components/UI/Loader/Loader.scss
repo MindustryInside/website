@@ -1,0 +1,20 @@
+.loader__wrapper {
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    background: url('../../../../public/assets/logo.png') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 20px;
+    animation: rotate 5s linear infinite;
+  }
+}
