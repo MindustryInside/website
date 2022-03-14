@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mindustryinside/static/css/main.01d26b36.css",
+    "main.js": "/mindustryinside/static/js/main.a3dfbdf3.js",
+    "static/media/background.png": "/mindustryinside/static/media/background.e875c62b4450818e7ddb.png",
+    "index.html": "/mindustryinside/index.html",
+    "main.01d26b36.css.map": "/mindustryinside/static/css/main.01d26b36.css.map",
+    "main.a3dfbdf3.js.map": "/mindustryinside/static/js/main.a3dfbdf3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01d26b36.css",
+    "static/js/main.a3dfbdf3.js"
+  ]
+}
