@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import Loader from '../components/UI/Loader/Loader';
 import './ChartPage.scss';
 import { APIservice } from '../API/APIservice';
@@ -6,7 +6,7 @@ import Select from '../components/UI/Select/Select';
 import { option } from '../ts/interfaces';
 import Chart from '../components/Chart';
 
-const ChartPage = () => {
+const ChartPage: FC = () => {
   const [data, setData] = useState([{}]);
   const [options, setOptions] = useState<option[]>([{id: 'default', value: 'Загрузка...'}]);
   const [isLoading, setIsLoading] = useState(false);

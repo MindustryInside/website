@@ -1,5 +1,4 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { APIservice } from '../API/APIservice';
 import PnmList from '../components/PnmList';
 import Input from '../components/UI/Input/Input';
@@ -9,7 +8,7 @@ import { useSortedData } from '../hooks/usePnm';
 import { option, pnm } from '../ts/interfaces';
 import './PluginsNModsPage.scss';
 
-const PluginsNModsPage = () => {
+const PluginsNModsPage: FC = () => {
   const [data, setData] = useState<pnm[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentUrlOption, setCurrentUrlOption] = useState('plugins');

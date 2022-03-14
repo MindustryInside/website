@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import './MainPage.scss'
 
-function MainPage() {
+const MainPage: FC = () => {
   return (
     <div className="wrapper">
       <div className="router"></div>
