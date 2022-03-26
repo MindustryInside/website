@@ -7,13 +7,13 @@ function Header() {
   return (
     <header className='header'>
       <div className="inner__links">
-        <Link className="header__link" to={'website/main'}>
+        <Link className="header__link" to={'/main'}>
           <div className="link__to__main"></div>
         </Link>
-        <Link className="header__link" to={'website/chart'}>
+        <Link className="header__link" to={'/chart'}>
           График онлайна
         </Link>
-        <Link className="header__link" to={'website/pluginsnmods'}>
+        <Link className="header__link" to={'/pluginsnmods'}>
           Плагины и Моды
         </Link>
       </div>
