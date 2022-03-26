@@ -8,10 +8,11 @@
 }
 
 body {
-  background: url('../public/assets/background.png');
+  background: url('../public/assets/background.png') repeat-x fixed;
   background-size: cover;
   overflow-x: hidden;
   font-family: 'Ubuntu';
+  animation: bg-move infinite 60s linear;
 }
 
 a {
@@ -19,7 +20,18 @@ a {
   margin: 0;
 }
 
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 1000px 0;
+  }
 
+  100% {
+    background-position: 0 0;
+  }
+}
 
 @keyframes rotate {
   0% {
